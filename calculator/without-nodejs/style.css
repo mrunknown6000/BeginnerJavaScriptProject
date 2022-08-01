@@ -1,0 +1,87 @@
+/* CSS Classes */
+.grid-container {
+	display: grid;
+	
+	grid-template-columns: 2fr 5fr 2fr; 
+}
+
+.grid-calculator {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+}
+
+/* Specific Item Data */
+
+/* Color Only Section */
+#title-div {background-color: lightblue;}
+#calc-titles {background-color: lightgreen;}
+
+#calc-btn {background-color: #efff93;}
+#calc-btn:hover {background-color: #e5ff4f;}
+
+#clear-btn {background-color: #fd9fa9;}
+#clear-btn:hover {background-color: #fc7e8b;}
+
+
+#calc-text-div {
+	background-color: #a0d0ea;
+	margin: 5%;
+	margin-top: 7%;
+}
+
+#calc-btn-div {
+	margin-top: 4%;
+	margin-bottom: 5%;
+}
+
+
+/* CSS Normal Data */
+h3 {
+	font-weight: bold;
+	font-size: large;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	text-align: center;
+	color: rgba(59, 60, 65, 0.822);
+}
+
+html,body {
+	background-color: lightgreen;
+	margin: 0;
+	padding: 0;
+}
+
+input[type="text"] {
+	border: none;
+	border-bottom: 2px solid #80a6bc;
+	width: 90%;
+	padding: 3%;
+	margin-top: 10%;
+	margin-left: 2.5%;
+	font-size: larger;
+}
+
+input[type="button"] {
+	text-align: center;
+	font-size: larger;
+	padding: 8%;
+	width: 80%;
+	margin-top: 5%;
+	margin-left: 12%;
+	margin-bottom: 5%;
+
+	border: none;
+	border-bottom: 2px solid #80a6bc;
+}
+
+/* CSS Modified for Responsive Design*/
+@media screen and (max-width: 768px) {
+	.grid-container {
+		grid-template-columns: 1fr 10fr 1fr;
+	}
+}

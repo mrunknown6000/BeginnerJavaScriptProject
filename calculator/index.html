@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<script src="/script.js"></script>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator on Web by Minh</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<!-- Title -->
+	<div id="title-div">
+		<br><br><br><br><br><br><br>
+		<h1>Simple Calculator by Minh</h1>
+		<br><br><br><br><br><br><br>
+	</div>
+
+	<!-- Calculator UI -->
+	<div class="grid-container" id="calc-titles">
+	<div><h1></h1></div>
+	<div id="calc-text-div">
+		<form name="calculator">
+		<input type="text" name="input-number" id="input-number" placeholder="Calculation" disabled>
+		<div class="grid-calculator" id="clac-btn-div">
+			<!-- Upper Row 1 -->
+			<div><input type="button" onclick="calcInput(1)" value="1"></div>
+			<div><input type="button" onclick="calcInput(2)" value="2"></div>
+			<div><input type="button" onclick="calcInput(3)" value="3"></div>
+			<div><input type="button" onclick="calcOperation('+')" id="calc-btn" value="+"></div>
+			<!-- Row 2 -->
+			<div><input type="button" onclick="calcInput(4)" value="4"></div>
+			<div><input type="button" onclick="calcInput(5)" value="5"></div>
+			<div><input type="button" onclick="calcInput(6)" value="6"></div>
+			<div><input type="button" onclick="calcOperation('-')" id="calc-btn" value="-"></div>
+			<!-- Row 3 -->
+			<div><input type="button" onclick="calcInput(7)" value="7"></div>
+			<div><input type="button" onclick="calcInput(8)" value="8"></div>
+			<div><input type="button" onclick="calcInput(9)" value="9"></div>
+			<div><input type="button" onclick="calcOperation('*')" id="calc-btn" value="x"></div>
+			<!-- Row 4 -->
+			<div><input type="button" onclick="calcClear()" id="clear-btn" value="C"></div>
+			<div><input type="button" onclick="calcInput(0)" value="0"></div>
+			<div><input type="button" onclick="calcResult()" value="="></div>
+			<div><input type="button" onclick="calcOperation('/')" id="calc-btn" value="/"></div>
+		</div>
+		</form>
+	</div>
+	<div><h1></h1></div>
+	</div>
+</body>
+</html>
